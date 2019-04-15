@@ -1,0 +1,14 @@
+C:\Users\anonyme\source\repos\PhoneApi\PhoneApi\bin\Debug\netcoreapp2.1\PhoneApi.deps.json
+C:\Users\anonyme\source\repos\PhoneApi\PhoneApi\bin\Debug\netcoreapp2.1\PhoneApi.runtimeconfig.json
+C:\Users\anonyme\source\repos\PhoneApi\PhoneApi\bin\Debug\netcoreapp2.1\PhoneApi.runtimeconfig.dev.json
+C:\Users\anonyme\source\repos\PhoneApi\PhoneApi\bin\Debug\netcoreapp2.1\PhoneApi.dll
+C:\Users\anonyme\source\repos\PhoneApi\PhoneApi\bin\Debug\netcoreapp2.1\PhoneApi.pdb
+C:\Users\anonyme\source\repos\PhoneApi\PhoneApi\obj\Debug\netcoreapp2.1\PhoneApi.csprojAssemblyReference.cache
+C:\Users\anonyme\source\repos\PhoneApi\PhoneApi\obj\Debug\netcoreapp2.1\PhoneApi.csproj.CoreCompileInputs.cache
+C:\Users\anonyme\source\repos\PhoneApi\PhoneApi\obj\Debug\netcoreapp2.1\PhoneApi.RazorAssemblyInfo.cache
+C:\Users\anonyme\source\repos\PhoneApi\PhoneApi\obj\Debug\netcoreapp2.1\PhoneApi.RazorAssemblyInfo.cs
+C:\Users\anonyme\source\repos\PhoneApi\PhoneApi\obj\Debug\netcoreapp2.1\PhoneApi.AssemblyInfoInputs.cache
+C:\Users\anonyme\source\repos\PhoneApi\PhoneApi\obj\Debug\netcoreapp2.1\PhoneApi.AssemblyInfo.cs
+C:\Users\anonyme\source\repos\PhoneApi\PhoneApi\obj\Debug\netcoreapp2.1\PhoneApi.RazorTargetAssemblyInfo.cache
+C:\Users\anonyme\source\repos\PhoneApi\PhoneApi\obj\Debug\netcoreapp2.1\PhoneApi.dll
+C:\Users\anonyme\source\repos\PhoneApi\PhoneApi\obj\Debug\netcoreapp2.1\PhoneApi.pdb
