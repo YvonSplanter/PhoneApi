@@ -20,11 +20,38 @@ namespace PhoneApi.Controllers
             return PhoneDao.GetAll();
         }
 
-        // GET api/values/5
+        // GET api/phone/{id}
         [HttpGet("{id}")]
         public ActionResult<Phone> Get(string id)
         {
             return PhoneDao.GetById(id);
+        }
+
+        //Post api/phone
+        [HttpPost]
+        public ActionResult Create(Phone phone)
+        {
+            var result = PhoneDao.Create(phone);
+            if (result == 1)
+                return Ok();
+            return BadRequest();
+        }
+
+        [HttpPut]
+        public ActionResult Update(Phone phone) {
+            var result = PhoneDao.Update(phone);
+            if (result == 1)
+                return Ok();
+            return BadRequest();
+        }
+
+        [HttpDelete("{id}")]
+        public ActionResult Delete(string id)
+        {
+            var result = PhoneDao.Delete(id);
+            if (result == 1)
+                return Ok();
+            return BadRequest();
         }
     }
 }

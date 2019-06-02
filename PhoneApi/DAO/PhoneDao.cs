@@ -66,6 +66,50 @@ namespace PhoneApi.DAO
             return phone;
         }
 
+        public static int Create(Phone phone) {
+            OpenConnection();
+            var cmd = new MySqlCommand();
+            cmd.Connection = cnx;
+            cmd.CommandText = "INSERT INTO phone VALUES(@pid,@pname,@pprice,@pimage,@pdescription)";
+            cmd.Parameters.AddWithValue("@pid", phone.ID);
+            cmd.Parameters.AddWithValue("@pname", phone.Name);
+            cmd.Parameters.AddWithValue("@pprice", phone.Price);
+            cmd.Parameters.AddWithValue("@pimage", phone.Image);
+            cmd.Parameters.AddWithValue("@pdescription", phone.Description);
+            cmd.Prepare();
+            var result = cmd.ExecuteNonQuery();
+            CloseConnection();
+            return result;
+        }
+
+        public static int Update(Phone phone) {
+            OpenConnection();
+            var cmd = new MySqlCommand();
+            cmd.Connection = cnx;
+            cmd.CommandText = "UPDATE phone SET name=@pname,price=@pprice,image=@pimage,description=@pdescription WHERE id=@pid";
+            cmd.Parameters.AddWithValue("@pid", phone.ID);
+            cmd.Parameters.AddWithValue("@pname", phone.Name);
+            cmd.Parameters.AddWithValue("@pprice", phone.Price);
+            cmd.Parameters.AddWithValue("@pimage", phone.Image);
+            cmd.Parameters.AddWithValue("@pdescription", phone.Description);
+            cmd.Prepare();
+            var result = cmd.ExecuteNonQuery();
+            CloseConnection();
+            return result;
+        }
+
+        public static int Delete(string id) {
+            OpenConnection();
+            var cmd = new MySqlCommand();
+            cmd.Connection = cnx;
+            cmd.CommandText = "DELETE FROM phone  WHERE id=@pid";
+            cmd.Parameters.AddWithValue("@pid", id);
+            cmd.Prepare();
+            var result = cmd.ExecuteNonQuery();
+            CloseConnection();
+            return result;
+        }
+
         private static void CloseConnection() {
             cnx.Close();
         }
